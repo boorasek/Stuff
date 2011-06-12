@@ -88,6 +88,12 @@ map \b :make<CR>:copen 8 <CR><C-W>x
 map \n :cn<CR>
 map \p :cp<CR>
 
+"alt map
+nmap <C-Left> <C-W>h<C-W>_
+nmap <C-Right> <C-W>l<C-W>_
+nmap <C-Up> <C-W>k<C-W>_
+nmap <C-Down> <C-W>j<C-W>_
+
 set wildchar=<TAB> wildmenu wildmode=full
 set wildcharm=<C-Z>
 nnoremap <TAB> :b <C-Z>
@@ -95,3 +101,12 @@ set list listchars=tab:❘-,trail:·,extends:»,precedes:«,nbsp:×
 set cursorline
 let g:C_CFlags = "-I/opt/local/include -Wall -ansi -pedantic"
 set go-=Lr
+
+
+"ctags
+let Tlist_Ctags_Cmd = "/opt/local/bin/ctags"
+let Tlist_WinWidth = 50
+map <F4> :TlistToggle<cr>
+map <F8> :!/opt/local/bin/ctags -R --c++-kinds=+pl --fields=+iatS --language-force=C++ --extra=+q .<CR>
+
+
