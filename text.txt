@@ -1,2 +1,3 @@
 linia testowa
 kolejna testowa
+i jeszcze jedna
