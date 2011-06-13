@@ -1,5 +1,5 @@
-<<<<<<< HEAD
 moja linia
-=======
 linia testowa
->>>>>>> master
+kolejna testowa
+i jeszcze jedna
+ostatnia
